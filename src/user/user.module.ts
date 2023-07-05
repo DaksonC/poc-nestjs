@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Module } from '@nestjs/common';
 import { UserService } from './user.service';
 import { UserController } from './user.controller';
@@ -9,5 +10,4 @@ import { PrismaModule } from 'src/prisma/prisma.module';
   providers: [UserService],
   exports: [UserService],
 })
-// eslint-disable-next-line prettier/prettier
 export class UserModule { }
